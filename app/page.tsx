@@ -1,11 +1,11 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import { useState } from 'react';
+import { ConvertArea } from '@/components/ConvertArea/ConvertArea';
+import { Template } from '@/components/templates/Template';
 
 export default function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <Template>
+      <ConvertArea />
+    </Template>
   );
 }
